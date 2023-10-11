@@ -1,6 +1,6 @@
 FROM php:8.0-apache
 
-COPY ./src/ /var/www/html
+COPY . /var/www/html
 RUN chown -R www-data:www-data /var/www/html
 RUN rm /var/log/apache2/*
 RUN apache2ctl restart
